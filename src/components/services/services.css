@@ -1,0 +1,95 @@
+.services__container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+
+.service {
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+    border: 1px solid var(--color-primary);
+    height: auto;
+    transition: var(--transition);
+}
+
+.service:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.service__head {
+    background-color: var(--color-primary);
+    padding: 2rem;
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.service__head h3 {
+    color: var(--color-bg);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.service__list {
+    padding: 2rem 1.5rem 1.5rem 2rem;
+}
+
+.service__list li {
+    display: flex;
+    width: 80%;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.service__title-icon {
+    color: var(--icon-highlight);
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top: 0.2rem;
+}
+
+.service__list-icon {
+    color: var(--color-primary);
+    margin-top: 2px;
+    margin-right: 0.5rem;
+}
+
+.service__list p {
+    font-size: 0.9rem;
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .services__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    .service {
+        height: auto;
+    }
+}
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+ 
+@media all and (max-width: 480px) { 
+
+}

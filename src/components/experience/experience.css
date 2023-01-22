@@ -1,0 +1,95 @@
+.category-title {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.experience__container > div {
+    background: var(--color-primary-variant);
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    border: 1p solid transparent;
+    transition: var(--transition);
+}
+
+.experience__container > div:hover {
+    background: transparent;
+    color: var(--icon-highlight);
+    border-color: var(--icon-highlight);
+}
+
+.experience__container > div h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 2fr;
+    row-gap: 2rem;
+}
+
+.experience__details {
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+.experience__details-icon {
+    margin-top: 6px;
+    color: var(--icon-highlight);
+    margin-right: 1rem;
+}
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__content {
+        padding: 1rem;
+    }
+
+}
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .experience__container {
+        gap: 1rem;
+    }
+
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+
+}
+ 
+@media all and (max-width: 480px) { 
+
+}
