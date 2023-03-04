@@ -8,12 +8,10 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    background: linear-gradient(
-        45deg,
-        transparent,
-        var(--color-primary),
-        transparent
-    );
+    background: linear-gradient(45deg,
+            transparent,
+            var(--color-primary),
+            transparent);
     display: grid;
     place-items: center;
 }
@@ -43,7 +41,8 @@
     text-align: center;
     transition: var(--transition);
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
 .about__card:hover {
     background: transparent;
@@ -83,10 +82,8 @@
    768-480     - tablet 
    480-less    - phone landscape & smaller
 --------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
 
-}
- 
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .about__container {
         grid-template-columns: 1fr;
@@ -108,7 +105,7 @@
     }
 
 }
- 
+
 @media all and (min-width: 480px) and (max-width: 768px) {
     .about__me {
         width: 65%;
@@ -129,7 +126,7 @@
     }
 
 }
- 
+
 @media all and (max-width: 480px) {
     .about__me {
         display: none;
@@ -138,7 +135,7 @@
     .about__container {
         display: flex;
     }
-    
+
     .about__me-image {
         display: none;
     }

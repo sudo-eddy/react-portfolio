@@ -9,7 +9,7 @@
     gap: 1.5rem;
 }
 
-.experience__container > div {
+.experience__container>div {
     background: var(--color-primary-variant);
     padding: 2rem 3rem;
     border-radius: 1.5rem;
@@ -17,13 +17,13 @@
     transition: var(--transition);
 }
 
-.experience__container > div:hover {
+.experience__container>div:hover {
     background: transparent;
     color: var(--icon-highlight);
     border-color: var(--icon-highlight);
 }
 
-.experience__container > div h3 {
+.experience__container>div h3 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: var(--color-white);
@@ -61,7 +61,7 @@
         gap: 0;
     }
 
-    .experience__container > div {
+    .experience__container>div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
@@ -72,24 +72,20 @@
     }
 
 }
- 
-@media all and (min-width: 768px) and (max-width: 1024px) {
 
-}
- 
+@media all and (min-width: 768px) and (max-width: 1024px) {}
+
 @media all and (min-width: 480px) and (max-width: 768px) {
     .experience__container {
         gap: 1rem;
     }
 
-    .experience__container > div {
+    .experience__container>div {
         width: 100%;
         padding: 2rem 1rem;
     }
 
 
 }
- 
-@media all and (max-width: 480px) { 
 
-}
+@media all and (max-width: 480px) {}
