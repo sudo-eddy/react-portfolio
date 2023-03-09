@@ -27,7 +27,7 @@ const About = () => {
               </h5>
               <small>React</small>
               <small>
-                1+ Years
+                2+ Years
               </small>
             </div>
             <div className="about__card">
@@ -37,7 +37,7 @@ const About = () => {
               </h5>
               <small>Python | JS | Java</small>
               <small>
-                1+ Years
+                2+ Years
               </small>
             </div>
             <div className="about__card">
