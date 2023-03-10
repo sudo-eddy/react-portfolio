@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.847905d3.css",
-    "main.js": "/react-portfolio/static/js/main.bd745d14.js",
+    "main.js": "/react-portfolio/static/js/main.c744ff6f.js",
     "static/media/go-kart-pic.png": "/react-portfolio/static/media/go-kart-pic.c226205ccd3b7909fc71.png",
     "static/media/eddy-castillo-resume.pdf": "/react-portfolio/static/media/eddy-castillo-resume.fe5fdfec5d731dc4d49d.pdf",
     "static/media/background.jpg": "/react-portfolio/static/media/background.4869a40d1f7893c0301b.jpg",
     "static/media/laptop.png": "/react-portfolio/static/media/laptop.28cb8ca717aa3673cb27.png",
     "index.html": "/react-portfolio/index.html",
     "main.847905d3.css.map": "/react-portfolio/static/css/main.847905d3.css.map",
-    "main.bd745d14.js.map": "/react-portfolio/static/js/main.bd745d14.js.map"
+    "main.c744ff6f.js.map": "/react-portfolio/static/js/main.c744ff6f.js.map"
   },
   "entrypoints": [
     "static/css/main.847905d3.css",
-    "static/js/main.bd745d14.js"
+    "static/js/main.c744ff6f.js"
   ]
 }
