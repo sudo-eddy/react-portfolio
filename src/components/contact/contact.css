@@ -18,6 +18,7 @@
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    width: auto;
 }
 
 .contact__option-icon {
@@ -27,7 +28,7 @@
 
 .contact__option a {
     margin-top: 0.7rem;
-    display: inline-block;
+    display: flex;
     font-size: 0.8rem;
 }
 
@@ -75,4 +76,17 @@ textarea {
     }
 }
 
-@media all and (max-width: 480px) {}
+@media all and (max-width: 480px) {
+    .contact__options h4, h5{
+        display: none;
+    }
+
+    .contact__options a{
+        font-size: x-small;
+        padding-left: none;
+    }
+
+    .contact__option {
+        padding: 0.5rem;
+    }
+}

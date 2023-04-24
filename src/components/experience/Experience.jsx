@@ -1,74 +1,63 @@
-import React from 'react'
-import './experience.css'
-import { BsPatchCheckFill } from 'react-icons/bs'
-import techStack from './Enumerators'
+import React from "react";
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+} from "mdb-react-ui-kit";
+import { BsPatchCheckFill } from "react-icons/bs";
+import "./experience.css";
+import techStack from "./Enumerators";
 
 const Experience = () => {
   return (
-    <section id='experience'>
+    <section id="experience">
       <h5>Let's get technical</h5>
       <h2>My Experience</h2>
-
-      <div className="container experience__container">
-        {
-          techStack.map(({ category, details }) => {
-            return (
-              <div className='experience__content'>
-                <h3 className='category-title'>{category}</h3>
-                <article className='experience__details'>
-                  <BsPatchCheckFill className='experience__details-icon' />
-                  <div>
-                    <h4>
-                      {details.lang1}
-                    </h4>
-                    <small>
-                      {details.exp1}
-                    </small>
-                  </div>
-                </article>
-                <article className='experience__details'>
-                  <BsPatchCheckFill className='experience__details-icon' />
-                  <div>
-                    <h4>
-                      {details.lang2}
-                    </h4>
-                    <small>
-                      {details.exp2}
-                    </small>
-                  </div>
-                </article>
-                <article className='experience__details'>
-                  <BsPatchCheckFill className='experience__details-icon' />
-                  <div>
-                    <h4>
-                      {details.lang3}
-                    </h4>
-                    <small>
-                      {details.exp3}
-                    </small>
-                  </div>
-                </article>
-                <article className='experience__details'>
-                  <BsPatchCheckFill className='experience__details-icon' />
-                  <div>
-                    <h4>
-                      {details.lang4}
-                    </h4>
-                    <small>
-                      {details.exp4}
-                    </small>
-                  </div>
-                </article>
-              </div>
-
-            )
-          })
-        }
-
-      </div>
-
+      {techStack.map(({ category, details }) => {
+        return (
+          <MDBCard
+            className="experience-container custom-card"
+            sm="12"
+            lg="6"
+            xl="6"
+          >
+            <MDBCardBody className="card-body">
+              <MDBCardTitle className="category-title">{category}</MDBCardTitle>
+              <MDBCardText>
+                <ul>
+                  <li>
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    {details.lang1}
+                    <br />
+                    <small>{details.exp1}</small>
+                  </li>
+                  <li>
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    {details.lang2}
+                    <br />
+                    <small>{details.exp2}</small>
+                  </li>
+                  <li>
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    {details.lang3}
+                    <br />
+                    <small>{details.exp3}</small>
+                  </li>
+                  <li>
+                    <BsPatchCheckFill className="experience__details-icon" />
+                    {details.lang4}
+                    <br />
+                    <small>{details.exp4}</small>
+                  </li>
+                </ul>
+              </MDBCardText>
+            </MDBCardBody>
+          </MDBCard>
+        );
+      })}
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

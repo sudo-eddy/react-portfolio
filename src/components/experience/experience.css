@@ -1,12 +1,25 @@
 .category-title {
-    width: 100%;
-    font-size: 1.3rem;
+    width: auto;
+    font-size: 1.2rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.custom-card {
+    background: var(--color-primary-variant);
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    padding-left: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
 }
 
 .experience__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    color: var(--color-white);
 }
 
 .experience__container>div {
@@ -46,46 +59,3 @@
     color: var(--icon-highlight);
     margin-right: 1rem;
 }
-
-
-/*------------------------------------------
-  Responsive Grid Media Queries - 1280, 1024, 768, 480
-   1280-1024   - desktop (default grid)
-   1024-768    - tablet landscape
-   768-480     - tablet 
-   480-less    - phone landscape & smaller
---------------------------------------------*/
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-    .experience__container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .experience__container>div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-
-    .experience__content {
-        padding: 1rem;
-    }
-
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-    .experience__container {
-        gap: 1rem;
-    }
-
-    .experience__container>div {
-        width: 100%;
-        padding: 2rem 1rem;
-    }
-
-
-}
-
-@media all and (max-width: 480px) {}

@@ -6,13 +6,12 @@ import { FiUsers } from 'react-icons/fi'
 
 const About = () => {
   return (
-    <section id='about'>
+    <section className='sm-12' id='about'>
       <h5>The details</h5>
       <h2>About Me</h2>
 
       <div className='container about__container'>
         <div className='about__me'>
-          <h2>About Me</h2>
           <div className="about__me-image">
             <img src={Headshot} alt='About' />
           </div>
